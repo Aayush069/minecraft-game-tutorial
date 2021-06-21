@@ -1,4 +1,4 @@
-
+#-----------------------------AUTHOR: Follow on Instagram @_.b_a_a_g_h_i._ -------------------------------#
 
 from ursina import*  
 from ursina.prefabs.first_person_controller import FirstPersonController
@@ -12,6 +12,7 @@ dirt_texture = load_texture('assets/dirt_block.png')
 sky_texture = load_texture('assets/skybox.png')
 arm_texture = load_texture('assets/arm_texture.png')
 punch_sound = Audio('assets/punch_sound',loop = False, autoplay= False)
+bgm_sound=Audio('assets\Minecraft Background Music 128 kbps.mp3',loop=True,autoplay=True)
 
 block_pick = 1
 
@@ -97,5 +98,7 @@ player = FirstPersonController()
 
 sky = Sky()
 hand = Hand()
-
+bgm_sound.play()
 app.run()
+
+#-----------------------------AUTHOR: Follow on Instagram @_.b_a_a_g_h_i._ -------------------------------#
